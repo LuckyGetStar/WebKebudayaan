@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bangga Budayaku, Identitasku!</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAVIGASI ══ -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">🇮🇩 BudayaKu</div>
+  <div class="nav-links">
+    <button onclick="showPage('home')"     id="nav-home"     class="active">Beranda</button>
+    <button onclick="showPage('kenali')"   id="nav-kenali">Kenali</button>
+    <button onclick="showPage('produk')"   id="nav-produk">Produk Lokal</button>
+    <button onclick="showPage('bahasa')"   id="nav-bahasa">Bahasa</button>
+    <button onclick="showPage('jatidiri')" id="nav-jatidiri">Jati Diri</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HALAMAN BERANDA
+══════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <div class="hero">
+    <div class="batik-decor tl">🌺</div>
+    <div class="batik-decor tr">🌺</div>
+    <div class="batik-decor bl">🌿</div>
+    <div class="batik-decor br">🌿</div>
+
+    <div class="garuda-icon">🦅</div>
+    <div class="hero-tag">Lestarikan Kebudayaan Indonesia · Di Era Globalisasi</div>
+    <h1>Bangga <span>Budayaku</span>,<br>Identitasku!</h1>
+    <p class="hero-sub">Lestarikan Kebudayaan Indonesia di Era Globalisasi</p>
+    <p class="hero-quote">"Budaya adalah warisan leluhur yang tak ternilai. Tugas kita menjaga, merawat, dan mewariskannya untuk generasi mendatang."</p>
+
+    <div class="hero-cards">
+      <div class="hero-card" onclick="showPage('kenali')">
+        <div class="card-icon">🏛️</div>
+        <div class="card-title">Kenali Budaya</div>
+        <div class="card-desc">Jelajahi kekayaan suku, seni & adat Indonesia</div>
+      </div>
+      <div class="hero-card" onclick="showPage('produk')">
+        <div class="card-icon">🛍️</div>
+        <div class="card-title">Produk Lokal</div>
+        <div class="card-desc">Dukung ekonomi & budaya bangsa</div>
+      </div>
+      <div class="hero-card" onclick="showPage('bahasa')">
+        <div class="card-icon">🗣️</div>
+        <div class="card-title">Bahasa & Tradisi</div>
+        <div class="card-desc">Lestarikan bahasa daerah & tradisi kita</div>
+      </div>
+      <div class="hero-card" onclick="showPage('jatidiri')">
+        <div class="card-icon">💪</div>
+        <div class="card-title">Jati Diri Bangsa</div>
+        <div class="card-desc">Bangga menjadi orang Indonesia!</div>
+      </div>
+    </div>
+    <div class="scroll-hint">↓ Scroll untuk jelajahi lebih lanjut</div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-num">1.340+</div><div class="stat-label">Suku Bangsa</div></div>
+    <div class="stat-item"><div class="stat-num">718+</div><div class="stat-label">Bahasa Daerah</div></div>
+    <div class="stat-item"><div class="stat-num">17.000+</div><div class="stat-label">Pulau</div></div>
+    <div class="stat-item"><div class="stat-num">34</div><div class="stat-label">Provinsi</div></div>
+    <div class="stat-item"><div class="stat-num">270+</div><div class="stat-label">Juta Penduduk</div></div>
+  </div>
+
+  <div class="promo-section">
+    <div class="section-label">4 Pilar Pelestarian</div>
+    <h2 class="section-title">Ayo, Lestarikan Budaya Bangsa!</h2>
+    <div class="divider"></div>
+    <p class="section-desc">Indonesia adalah negara dengan kekayaan budaya terbesar di dunia. Sebagai generasi muda, kamu memiliki peran penting dalam menjaga warisan ini tetap hidup.</p>
+    <div class="promo-grid">
+      <div class="promo-card" onclick="showPage('kenali')">
+        <div class="promo-num">01</div>
+        <div class="promo-icon">🏛️</div>
+        <h3>Kenali Budaya Daerahmu</h3>
+        <p>Indonesia kaya akan suku, bahasa, adat, seni dan tradisi. Kenali, pahami, dan banggakan budayamu sendiri.</p>
+        <button class="explore-btn">Jelajahi →</button>
+      </div>
+      <div class="promo-card" onclick="showPage('produk')">
+        <div class="promo-num">02</div>
+        <div class="promo-icon">🛒</div>
+        <h3>Gunakan & Cintai Produk Lokal</h3>
+        <p>Dukung karya anak bangsa! Dengan membeli produk lokal, kita menjaga ekonomi dan budaya Indonesia.</p>
+        <button class="explore-btn">Jelajahi →</button>
+      </div>
+      <div class="promo-card" onclick="showPage('bahasa')">
+        <div class="promo-num">03</div>
+        <div class="promo-icon">🗣️</div>
+        <h3>Lestarikan Bahasa & Tradisi</h3>
+        <p>Bahasa daerah dan tradisi adalah bagian dari identitas kita. Gunakan dalam kehidupan sehari-hari!</p>
+        <button class="explore-btn">Jelajahi →</button>
+      </div>
+      <div class="promo-card" onclick="showPage('jatidiri')">
+        <div class="promo-num">04</div>
+        <div class="promo-icon">🇮🇩</div>
+        <h3>Jangan Lupa Jati Diri Bangsa</h3>
+        <p>Globalisasi boleh masuk, tapi jati diri bangsa harus tetap menjadi pegangan. Bangga jadi orang Indonesia!</p>
+        <button class="explore-btn">Jelajahi →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote-banner">
+    <blockquote>"Satu Nusa, Satu Bangsa, Satu Bahasa, Satu Budaya — <strong>INDONESIA</strong>"</blockquote>
+    <cite>Budaya Kita · Identitas Kita · Masa Depan Kita</cite>
+  </div>
+
+  <footer>
+    <p>🇮🇩 <strong>#BanggaBudayaKu</strong> · <strong>#IdentitasKuIndonesia</strong> · <strong>#LestarikanBudaya</strong></p>
+    <p style="margin-top:0.5rem">Dibuat dengan ❤️ untuk generasi penerus bangsa Indonesia</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HALAMAN: KENALI BUDAYA
+══════════════════════════════════════════ -->
+<div class="page" id="page-kenali">
+  <div class="sub-hero">
+    <div class="tag-badge">Pilar 01</div>
+    <h1>🏛️ Kenali Budaya Daerahmu</h1>
+    <p>Indonesia kaya akan suku, bahasa, adat, seni dan tradisi. Mari kenali, pahami, dan banggakan budayamu sendiri!</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Tari Tradisional Nusantara</div>
+    <h2 class="section-title" style="text-align:left; font-size:1.8rem;">Warisan Seni Gerak Indonesia</h2>
+    <div class="card-grid">
+      <div class="culture-card">
+        <div class="card-img" style="background:#FDF3D0;">
+           <img src="images/Tari-Saman.jpg" alt="Tari Saman">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tari Saman</div>
+          <div class="card-origin">Aceh</div>
+          <div class="card-info">Tarian seribu tangan yang memukau, simbol persatuan dan kebersamaan masyarakat Gayo.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#FDECEA;">
+          <img src="images/Tari-Pendet.jpg" alt="Tari Pendet">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tari Pendet</div>
+          <div class="card-origin">Bali</div>
+          <div class="card-info">Tarian selamat datang yang penuh keanggunan, biasa dipersembahkan di upacara keagamaan Hindu Bali.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#E8F5E9;">
+          <img src="images/Tari-Piring.jpg" alt="Tari Piring">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tari Piring</div>
+          <div class="card-origin">Minangkabau</div>
+          <div class="card-info">Tarian atraktif menggunakan piring sebagai properti, melambangkan rasa syukur atas panen melimpah.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#E3F2FD;">
+          <img src="images/Tari-TorTor.jpg" alt="Tari Tor-Tor">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tari Tor-Tor</div>
+          <div class="card-origin">Batak, Sumatra</div>
+          <div class="card-info">Tarian sakral masyarakat Batak yang diiringi gondang, digunakan dalam berbagai upacara adat.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#FFF3E0;">
+          <img src="images/Tari-Jaipong.jpg" alt="Tari Jaipong">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tari Jaipong</div>
+          <div class="card-origin">Jawa Barat</div>
+          <div class="card-info">Tarian yang energik dan ekspresif, menggabungkan gerakan ketuk tilu dan wayang golek.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#F3E5F5;">
+          <img src="images/Tari-Cakalele.jpg" alt="Tari Cakalele">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tari Cakalele</div>
+          <div class="card-origin">Maluku</div>
+          <div class="card-info">Tarian perang tradisional Maluku yang menggambarkan semangat juang dan keberanian para leluhur.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;">
+      <div class="section-label">Jelajahi Provinsi</div>
+      <h2 class="section-title" style="text-align:left; font-size:1.8rem;">34 Provinsi, Kekayaan Tak Terbatas</h2>
+      <div class="province-grid">
+        <div class="province-tag">
+  <img src="images/Provinsi/Aceh.jpg" alt="Aceh"> Aceh
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Sumut.jpg" alt="Sumut"> Sumut
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Sumbar.jpg" alt="Sumbar"> Sumbar
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Riau.jpg" alt="Riau"> Riau
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Kepri.jpg" alt="Kepri"> Kepri
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Jambi.jpg" alt="Jambi"> Jambi
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Sumsel.jpg" alt="Sumsel"> Sumsel
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Bengkulu.jpg" alt="Bengkulu"> Bengkulu
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Lampung.jpg" alt="Lampung"> Lampung
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Babel.jpg" alt="Babel"> Babel
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Jakarta.jpg" alt="DKI Jakarta"> DKI Jakarta
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Jabar.jpg" alt="Jabar"> Jabar
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Jateng.jpg" alt="Jateng"> Jateng
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Yogyakarta.jpg" alt="DIY"> DIY
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Jatim.jpg" alt="Jatim"> Jatim
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Bali.jpg" alt="Bali"> Bali
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/NTB.jpg" alt="NTB"> NTB
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/NTT.jpg" alt="NTT"> NTT
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Kalbar.jpg" alt="Kalbar"> Kalbar
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Kalteng.jpg" alt="Kalteng"> Kalteng
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Kalsel.jpg" alt="Kalsel"> Kalsel
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Kaltim.jpg" alt="Kaltim"> Kaltim
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Kaltara.jpg" alt="Kaltara"> Kaltara
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Sulut.jpg" alt="Sulut"> Sulut
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Sulteng.jpg" alt="Sulteng"> Sulteng
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Sulsel.jpg" alt="Sulsel"> Sulsel
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Sultura.jpg" alt="Sultra"> Sultra
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Gorontalo.jpg" alt="Gorontalo"> Gorontalo
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Sulbar.jpg" alt="Sulbar"> Sulbar
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Maluku.jpg" alt="Maluku"> Maluku
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Malut.jpg" alt="Malut"> Malut
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Papua.jpg" alt="Papua"> Papua
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Papua-Barat.jpg" alt="Papua Barat"> Papua Barat
+</div>
+
+<div class="province-tag">
+  <img src="images/Provinsi/Papua-Tengah.jpg" alt="Papua Tengah"> Papua Tengah
+</div>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;">
+      <div class="section-label">Uji Pengetahuanmu!</div>
+      <h2 class="section-title" style="text-align:left; font-size:1.8rem;">Quiz Budaya Nusantara</h2>
+      <div class="quiz-container" id="quiz-kenali">
+        <div id="qk-main">
+          <div class="quiz-header">
+            <div class="quiz-progress"><div class="quiz-progress-fill" id="qk-fill" style="width:0%"></div></div>
+            <div class="quiz-qnum" id="qk-num">Pertanyaan 1 / 5</div>
+          </div>
+          <div class="quiz-question" id="qk-q"></div>
+          <div class="quiz-options" id="qk-opts"></div>
+          <div class="quiz-feedback" id="qk-fb"></div>
+          <button class="quiz-next" id="qk-next" onclick="nextQuestion('kenali')">Pertanyaan Berikutnya →</button>
+        </div>
+        <div class="quiz-result" id="qk-result">
+          <div class="quiz-score-big" id="qk-score"></div>
+          <p style="color:var(--abu);margin:0.5rem 0 1rem;">Skor Kamu</p>
+          <p id="qk-msg" style="color:var(--hitam);font-weight:600;margin-bottom:1.5rem;"></p>
+          <button class="quiz-next show" onclick="restartQuiz('kenali')">Coba Lagi 🔄</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>🇮🇩 <strong>#BanggaBudayaKu</strong> · <strong>#IdentitasKuIndonesia</strong></p>
+    <p style="margin-top:0.5rem">Dibuat dengan ❤️ untuk generasi penerus bangsa</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HALAMAN: PRODUK LOKAL
+══════════════════════════════════════════ -->
+<div class="page" id="page-produk">
+  <div class="sub-hero">
+    <div class="tag-badge">Pilar 02</div>
+    <h1>🛍️ Gunakan & Cintai Produk Lokal</h1>
+    <p>Dukung karya anak bangsa! Dengan membeli dan menggunakan produk lokal, kita menjaga ekonomi dan budaya Indonesia.</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Produk Unggulan Indonesia</div>
+    <h2 class="section-title" style="text-align:left; font-size:1.8rem;">Kebanggaan Karya Anak Bangsa</h2>
+    <div class="card-grid">
+      <div class="culture-card">
+        <div class="card-img" style="background:#FDF3D0;">
+           <img src="images/Batik.jpg" alt="Batik Indonesia">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Batik Indonesia</div>
+          <div class="card-origin">UNESCO Heritage</div>
+          <div class="card-info">Warisan budaya dunia. Batik bukan sekadar kain, melainkan identitas dan kebanggaan bangsa.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#E8F5E9;">
+           <img src="images/Jamu-Tradisional.jpg" alt="Jamu Tradisional">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Jamu Tradisional</div>
+          <div class="card-origin">Jawa</div>
+          <div class="card-info">Minuman herbal leluhur yang kini mendunia. Kearifan lokal dalam merawat kesehatan secara alami.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#FFF8E1;">
+           <img src="images/Cokelat-Nusantara.jpg" alt="Cokelat Nusantara">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Cokelat Nusantara</div>
+          <div class="card-origin">Sulawesi, Jawa</div>
+          <div class="card-info">Indonesia penghasil kakao terbaik dunia. Dukung cokelat lokal buatan petani Indonesia!</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#FDECEA;">
+           <img src="images/Kerajinan-Perak.jpg" alt="Kerajinan Perak">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Kerajinan Perak</div>
+          <div class="card-origin">Yogyakarta</div>
+          <div class="card-info">Perhiasan perak Kotagede yang tersohor, dibuat tangan oleh pengrajin berbakat turun-temurun.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#E3F2FD;">
+           <img src="images/Kopi3.jpg" alt="Kopi Indonesia">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Kopi Indonesia</div>
+          <div class="card-origin">Aceh, Toraja, Flores</div>
+          <div class="card-info">Kopi Indonesia diakui dunia. Dari Gayo hingga Flores, setiap tegukan adalah cerita budaya.</div>
+        </div>
+      </div>
+      <div class="culture-card">
+        <div class="card-img" style="background:#F3E5F5;">
+           <img src="images/Tenun-Ikat.jpg" alt="Tenun Ikat">
+        </div>
+        <div class="card-body">
+          <div class="card-name">Tenun Ikat</div>
+          <div class="card-origin">NTT, NTB</div>
+          <div class="card-info">Kain tenun ikat yang penuh makna filosofis, dibuat dengan teknik tradisional berbulan-bulan.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;">
+      <div class="section-label">Panduan Belanja Bijak</div>
+      <h2 class="section-title" style="text-align:left; font-size:1.8rem;">Tips Cinta Produk Lokal</h2>
+      <div class="tips-list">
+        <div class="tip-item">
+          <div class="tip-icon">🔍</div>
+          <div class="tip-content">
+            <h4>Cek Label "Made in Indonesia"</h4>
+            <p>Sebelum membeli, pastikan produk memiliki label buatan Indonesia. Produk UMKM lokal seringkali berkualitas lebih tinggi dari yang kamu bayangkan!</p>
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-icon">🛒</div>
+          <div class="tip-content">
+            <h4>Belanja di Pasar Tradisional & UMKM</h4>
+            <p>Kunjungi pasar tradisional, pameran UMKM, atau toko daring lokal. Setiap pembelian mendukung ribuan keluarga pengrajin Indonesia.</p>
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-icon">📱</div>
+          <div class="tip-content">
+            <h4>Promosikan di Media Sosial</h4>
+            <p>Unggah produk lokal favoritmu di media sosial dengan hashtag #BanggaProdukLokal. Kamu bisa membantu menjangkau pembeli lebih luas!</p>
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-icon">🎁</div>
+          <div class="tip-content">
+            <h4>Pilih Produk Lokal sebagai Hadiah</h4>
+            <p>Saat memberikan hadiah kepada teman atau keluarga, pilihkan produk lokal. Kamu sekaligus memperkenalkan kekayaan budaya Indonesia.</p>
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-icon">🏭</div>
+          <div class="tip-content">
+            <h4>Kunjungi Workshop & Pameran Kerajinan</h4>
+            <p>Ikuti pameran kerajinan dan kunjungi workshop pengrajin lokal. Pengalaman langsung menambah kecintaan pada budaya bangsa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pledge-box">
+      <h3>🌟 Ambil Tantangan 30 Hari!</h3>
+      <p>Selama 30 hari ke depan, gantikan satu produk impor dengan produk lokal setiap minggunya. Dokumentasikan perjalananmu dan bagikan di media sosial!</p>
+      <button class="pledge-btn" onclick="showPledge('produk')">✊ Ikut Tantangan Sekarang!</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>🇮🇩 <strong>#BanggaBudayaKu</strong> · <strong>#CintaProdukLokal</strong></p>
+    <p style="margin-top:0.5rem">Dibuat dengan ❤️ untuk generasi penerus bangsa</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HALAMAN: BAHASA & TRADISI
+══════════════════════════════════════════ -->
+<div class="page" id="page-bahasa">
+  <div class="sub-hero">
+    <div class="tag-badge">Pilar 03</div>
+    <h1>🗣️ Lestarikan Bahasa & Tradisi</h1>
+    <p>Bahasa daerah dan tradisi adalah bagian dari identitas kita. Gunakan dalam kehidupan sehari-hari, jangan sampai hilang!</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Bahasa-Bahasa Nusantara</div>
+    <h2 class="section-title" style="text-align:left; font-size:1.8rem;">718+ Bahasa Daerah di Indonesia</h2>
+    <div class="accordion-list">
+
+  <!-- Bahasa Jawa -->
+  <div class="accordion-item" onclick="toggleAccordion(this)">
+    <div class="accordion-header">
+      <span style="display:flex; align-items:center;">
+        <img src="images/Jawa.jpg" alt="Jawa" class="acc-icon-img">
+        Bahasa Jawa — 98 Juta Penutur
+      </span>
+      <span class="acc-arrow">▼</span>
+    </div>
+    <div class="accordion-body">
+      Bahasa Jawa adalah bahasa daerah dengan jumlah penutur terbanyak di Indonesia, bahkan masuk 10 besar dunia. Bahasa ini memiliki tingkatan tutur (unggah-ungguh) seperti Ngoko, Madya, dan Krama yang mencerminkan nilai hormat-menghormati dalam budaya Jawa. Aksara Jawa yang indah juga merupakan warisan tulisan yang perlu dilestarikan.
+      <br><br><strong>Kata-kata penting:</strong> Sugeng rawuh (selamat datang) · Matur nuwun (terima kasih) · Mangga (silakan)
+    </div>
+  </div>
+
+  <!-- Bahasa Sunda -->
+  <div class="accordion-item" onclick="toggleAccordion(this)">
+    <div class="accordion-header">
+      <span style="display:flex; align-items:center;">
+        <img src="images/Sunda.jpg" alt="Sunda" class="acc-icon-img">
+        Bahasa Sunda — 42 Juta Penutur
+      </span>
+      <span class="acc-arrow">▼</span>
+    </div>
+    <div class="accordion-body">
+      Bahasa Sunda merupakan bahasa etnis Sunda di Jawa Barat dan Banten. Seperti Bahasa Jawa, Bahasa Sunda juga memiliki undak-usuk basa (tingkatan bahasa). Aksara Sunda Kuno adalah salah satu warisan budaya yang tengah diperjuangkan kelestariannya.
+      <br><br><strong>Kata-kata penting:</strong> Hatur nuhun (terima kasih) · Wilujeng sumping (selamat datang) · Kumaha damang? (apa kabar?)
+    </div>
+  </div>
+
+  <!-- Bahasa Batak -->
+  <div class="accordion-item" onclick="toggleAccordion(this)">
+    <div class="accordion-header">
+      <span style="display:flex; align-items:center;">
+        <img src="images/Batak.jpg" alt="Batak" class="acc-icon-img">
+        Bahasa Batak — 8 Juta Penutur
+      </span>
+      <span class="acc-arrow">▼</span>
+    </div>
+    <div class="accordion-body">
+      Rumpun bahasa Batak terdiri dari beberapa dialek utama seperti Batak Toba, Karo, Simalungun, Mandailing, Angkola, dan Pakpak. Setiap dialek mencerminkan kekayaan budaya masing-masing sub-suku Batak di Sumatra Utara. Aksara Batak (Surat Batak) adalah sistem tulisan asli yang unik.
+      <br><br><strong>Kata-kata penting:</strong> Horas! (salam) · Mauliate (terima kasih - Toba) · Mejuah-juah (salam sehat - Karo)
+    </div>
+  </div>
+
+  <!-- Bahasa Bali -->
+  <div class="accordion-item" onclick="toggleAccordion(this)">
+    <div class="accordion-header">
+      <span style="display:flex; align-items:center;">
+        <img src="images/Bali.jpg" alt="Bali" class="acc-icon-img">
+        Bahasa Bali — 3.8 Juta Penutur
+      </span>
+      <span class="acc-arrow">▼</span>
+    </div>
+    <div class="accordion-body">
+      Bahasa Bali memiliki hubungan erat dengan agama Hindu yang dianut mayoritas masyarakat Bali. Bahasa ini memiliki sor-singgih (tingkatan bahasa) yang kompleks. Aksara Bali yang indah sering digunakan dalam lontar (naskah tradisional) dan prasasti kuil.
+      <br><br><strong>Kata-kata penting:</strong> Om Swastyastu (salam Hindu-Bali) · Suksma (terima kasih) · Rahajeng semeng (selamat pagi)
+    </div>
+  </div>
+
+  <!-- Bahasa Bugis-Makassar -->
+  <div class="accordion-item" onclick="toggleAccordion(this)">
+    <div class="accordion-header">
+      <span style="display:flex; align-items:center;">
+        <img src="images/Bugis.jpg" alt="Bugis" class="acc-icon-img">
+        Bahasa Bugis-Makassar — 6 Juta Penutur
+      </span>
+      <span class="acc-arrow">▼</span>
+    </div>
+    <div class="accordion-body">
+      Bahasa Bugis dan Makassar adalah dua bahasa bersaudara dari Sulawesi Selatan. Masyarakat Bugis terkenal dengan tradisi pelayaran dan merantau (mappasau). Aksara Lontara yang khas digunakan untuk menulis naskah-naskah kuno berisi hukum adat, sejarah, dan sastra.
+      <br><br><strong>Kata-kata penting:</strong> Assalamu alaikum · Makkunrai (wanita) · Rékkua maddepungeng (mari bersama)
+    </div>
+  </div>
+
+</div>
+
+    <div style="margin-top:3rem;">
+      <div class="section-label">Tradisi Nusantara</div>
+      <h2 class="section-title" style="text-align:left; font-size:1.8rem;">Tradisi yang Memperkaya Jiwa</h2>
+      <div class="card-grid">
+        <div class="culture-card">
+          <div class="card-img" style="background:#FFF8E1;">
+            <img src="images/Sekaten.jpg" alt="Sekaten">
+          </div>
+          <div class="card-body">
+            <div class="card-name">Sekaten</div>
+            <div class="card-origin">Yogyakarta & Solo</div>
+            <div class="card-info">Festival gamelan memperingati Maulid Nabi Muhammad SAW, perpaduan Islam dan budaya Jawa.</div>
+          </div>
+        </div>
+        <div class="culture-card">
+          <div class="card-img" style="background:#FDECEA;">
+            <img src="images/Nyepi.jpg" alt="Nyepi">
+          </div>
+          <div class="card-body">
+            <div class="card-name">Nyepi</div>
+            <div class="card-origin">Bali</div>
+            <div class="card-info">Hari Raya Tahun Baru Saka — hari hening total untuk refleksi diri dan alam semesta.</div>
+          </div>
+        </div>
+        <div class="culture-card">
+          <div class="card-img" style="background:#E8F5E9;">
+            <img src="images/Gotong-Royong2.jpg" alt="Gotong Royong">
+          </div>
+          <div class="card-body">
+            <div class="card-name">Gotong Royong</div>
+            <div class="card-origin">Seluruh Indonesia</div>
+            <div class="card-info">Tradisi kerja bersama yang menjadi jiwa bangsa. Nilai kebersamaan yang tak ternilai harganya.</div>
+          </div>
+        </div>
+        <div class="culture-card">
+          <div class="card-img" style="background:#E3F2FD;">
+            <img src="images/Karapan-Sapi.jpg" alt="Karapan Sapi">
+          </div>
+          <div class="card-body">
+            <div class="card-name">Karapan Sapi</div>
+            <div class="card-origin">Madura</div>
+            <div class="card-info">Tradisi balap sapi yang unik dari Madura, mencerminkan semangat dan keberanian masyarakat setempat.</div>
+          </div>
+        </div>
+        <div class="culture-card">
+          <div class="card-img" style="background:#F3E5F5;">
+            <img src="images/Rambu-Solo.jpg" alt="Rambu Solo">
+          </div>
+          <div class="card-body">
+            <div class="card-name">Rambu Solo</div>
+            <div class="card-origin">Toraja</div>
+            <div class="card-info">Upacara kematian yang megah dari Toraja, menghormati leluhur dengan ritual yang berlangsung berhari-hari.</div>
+          </div>
+        </div>
+        <div class="culture-card">
+          <div class="card-img" style="background:#FDF3D0;">
+            <img src="images/Pasola2.jpg" alt="Pasola">
+          </div>
+          <div class="card-body">
+            <div class="card-name">Pasola</div>
+            <div class="card-origin">Sumba, NTT</div>
+            <div class="card-info">Festival adu ketangkasan berkuda dan lembing yang menjadi pesta rakyat terbesar masyarakat Sumba.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pledge-box" style="background: linear-gradient(135deg, #C0392B 0%, #7B241C 100%);">
+      <h3>📖 Tantangan Bahasa Daerah</h3>
+      <p>Mulai hari ini, coba gunakan 3 kata bahasa daerahmu setiap hari. Ajak teman dan keluargamu ikut serta. Bahasa yang tidak digunakan akan punah!</p>
+      <button class="pledge-btn" onclick="showPledge('bahasa')">✊ Mulai Tantanganku!</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>🇮🇩 <strong>#BanggaBudayaKu</strong> · <strong>#LestarikanBahasa</strong></p>
+    <p style="margin-top:0.5rem">Dibuat dengan ❤️ untuk generasi penerus bangsa</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HALAMAN: JATI DIRI BANGSA
+══════════════════════════════════════════ -->
+<div class="page" id="page-jatidiri">
+  <div class="sub-hero">
+    <div class="tag-badge">Pilar 04</div>
+    <h1>💪 Jangan Lupa Jati Diri Bangsa</h1>
+    <p>Globalisasi boleh masuk, tapi jati diri bangsa harus tetap menjadi pegangan. Bangga menjadi orang Indonesia!</p>
+  </div>
+
+  <div class="content-section">
+    <div class="section-label">Tantangan & Peluang</div>
+    <h2 class="section-title" style="text-align:left; font-size:1.8rem;">Budaya di Era Globalisasi</h2>
+    <div class="accordion-list">
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <span><span class="acc-icon">⚠️</span>Tantangan: Pengaruh Budaya Asing</span>
+          <span class="acc-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          Globalisasi membawa arus budaya asing yang kuat — dari K-Pop, film Hollywood, hingga gaya hidup konsumerisme. Tanpa filter yang baik, generasi muda bisa kehilangan akar budayanya sendiri. Penting untuk bisa menyaring mana yang bermanfaat dan mana yang mengikis identitas bangsa.
+        </div>
+      </div>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <span><span class="acc-icon">✅</span>Peluang: Budaya Lokal Goes Global</span>
+          <span class="acc-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          Di sisi lain, globalisasi memberi peluang besar! Batik, gamelan, wayang, dan kuliner Indonesia kini bisa dikenal dunia lewat media sosial. Banyak kreator konten muda yang berhasil memopulerkan budaya lokal ke panggung internasional. Kamu bisa menjadi duta budaya Indonesia!
+        </div>
+      </div>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <span><span class="acc-icon">🎓</span>Peran Mahasiswa & Generasi Muda</span>
+          <span class="acc-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          Sebagai mahasiswa, kamu adalah garda terdepan pelestarian budaya. Ikuti UKM kesenian daerah, teliti budaya lokal sebagai topik skripsi, ikut festival budaya, dan jadilah konten kreator yang mempromosikan budaya Indonesia. Setiap aksi kecilmu punya dampak besar!
+        </div>
+      </div>
+      <div class="accordion-item" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <span><span class="acc-icon">📱</span>Budaya & Teknologi Digital</span>
+          <span class="acc-arrow">▼</span>
+        </div>
+        <div class="accordion-body">
+          Manfaatkan teknologi untuk melestarikan budaya! Digitalisasi naskah kuno, buat konten TikTok/Instagram tentang budaya daerah, ikut komunitas budaya online, atau buat aplikasi pembelajaran bahasa daerah. Teknologi bukan musuh budaya — justru bisa menjadi alat pelestarian terbaik.
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;">
+      <div class="section-label">Aksi Nyata</div>
+      <h2 class="section-title" style="text-align:left; font-size:1.8rem;">Apa yang Bisa Kamu Lakukan?</h2>
+      <div class="tips-list">
+        <div class="tip-item">
+          <div class="tip-icon">🎓</div>
+          <div class="tip-content">
+            <h4>Ikuti UKM Kesenian Daerah</h4>
+            <p>Bergabunglah dengan unit kegiatan mahasiswa yang fokus pada seni budaya daerah. Tari, musik tradisional, teater, atau sastra — pilih yang paling kamu minati!</p>
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-icon">📸</div>
+          <div class="tip-content">
+            <h4>Jadilah Content Creator Budaya</h4>
+            <p>Buat konten edukatif tentang budaya daerahmu di media sosial. Satu video yang viral bisa membuat jutaan orang mengenal budaya Indonesia lebih dalam.</p>
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-icon">🤝</div>
+          <div class="tip-content">
+            <h4>Ajarkan ke Generasi Lebih Muda</h4>
+            <p>Jadi relawan pengajar seni budaya di sekolah dasar terdekat. Mentransfer ilmu dan cinta budaya kepada anak-anak adalah investasi terbaik untuk masa depan bangsa.</p>
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-icon">🔬</div>
+          <div class="tip-content">
+            <h4>Teliti & Dokumentasikan Budaya Lokal</h4>
+            <p>Gunakan tugas kuliah, KKN, atau skripsi sebagai kesempatan untuk mendokumentasikan tradisi yang hampir punah di daerahmu.</p>
+          </div>
+        </div>
+        <div class="tip-item">
+          <div class="tip-icon">🌏</div>
+          <div class="tip-content">
+            <h4>Kenalkan Budaya kepada Teman Asing</h4>
+            <p>Jika kamu bertemu mahasiswa asing, jadilah duta budaya Indonesia yang bangga. Ceritakan keindahan budayamu dengan penuh semangat!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;">
+      <div class="section-label">Uji Pemahamanmu</div>
+      <h2 class="section-title" style="text-align:left; font-size:1.8rem;">Quiz: Aku Bangga Indonesia!</h2>
+      <div class="quiz-container" id="quiz-jatidiri">
+        <div id="qj-main">
+          <div class="quiz-header">
+            <div class="quiz-progress"><div class="quiz-progress-fill" id="qj-fill" style="width:0%"></div></div>
+            <div class="quiz-qnum" id="qj-num">Pertanyaan 1 / 5</div>
+          </div>
+          <div class="quiz-question" id="qj-q"></div>
+          <div class="quiz-options" id="qj-opts"></div>
+          <div class="quiz-feedback" id="qj-fb"></div>
+          <button class="quiz-next" id="qj-next" onclick="nextQuestion('jatidiri')">Pertanyaan Berikutnya →</button>
+        </div>
+        <div class="quiz-result" id="qj-result">
+          <div class="quiz-score-big" id="qj-score"></div>
+          <p style="color:var(--abu);margin:0.5rem 0 1rem;">Skor Kamu</p>
+          <p id="qj-msg" style="color:var(--hitam);font-weight:600;margin-bottom:1.5rem;"></p>
+          <button class="quiz-next show" onclick="restartQuiz('jatidiri')">Coba Lagi 🔄</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pledge-box" style="background: linear-gradient(135deg, #1A3A5C, #0D2137);">
+      <h3>🇮🇩 Ikrar Generasi Bangga Budaya</h3>
+      <p>Aku berjanji untuk terus menjaga, mempelajari, dan membanggakan budaya Indonesia — sebagai identitasku dan warisan untuk generasi mendatang!</p>
+      <button class="pledge-btn" onclick="showPledge('jatidiri')">✊ Ucapkan Ikrar!</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>🇮🇩 <strong>#BanggaBudayaKu</strong> · <strong>#JatiDiriBangsa</strong></p>
+    <p style="margin-top:0.5rem">Dibuat dengan ❤️ untuk generasi penerus bangsa</p>
+  </footer>
+</div>
+
+<!-- ══ MODAL PLEDGE ══ -->
+<div class="modal-overlay" id="pledge-modal" onclick="closePledge(event)">
+  <div class="modal-box">
+    <div class="modal-emoji" id="modal-emoji">🎉</div>
+    <h2 id="modal-title">Terima Kasih!</h2>
+    <p id="modal-body">Tekadmu luar biasa! Bersama kita bisa menjaga budaya Indonesia tetap hidup dan lestari.</p>
+    <button class="modal-close" onclick="document.getElementById('pledge-modal').classList.remove('show')">Tutup ✕</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
